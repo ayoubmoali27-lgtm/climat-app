@@ -53,7 +53,7 @@ function App() {
   return (
     <div className="App">
       <ThemeProvider theme={theme}>
-        <BasicButtons temp={temp} date={dateAndTime} loadingHH={isLoading} />
+        <BasicButtons  date={dateAndTime} loadingHH={isLoading} />
       </ThemeProvider>
     </div>
   );

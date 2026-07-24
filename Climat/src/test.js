@@ -16,7 +16,7 @@ import { useSelector, useDispatch } from "react-redux";
 
 
 
-export default function BasicButtons({ temp, date,loadingHH }) {
+export default function BasicButtons({  date,loadingHH }) {
 
   const weather = useSelector((state)=>{
     return state.weather.weather
