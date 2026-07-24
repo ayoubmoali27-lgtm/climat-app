@@ -1,14 +1,14 @@
-import logo from "./logo.svg";
+
 import "./App.css";
 import BasicButtons from "./test.js";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { useEffect, useState } from "react";
-import axios from "axios";
+
 import moment from "moment/moment.js";
 import "moment/min/locales"
 
 import { useSelector, useDispatch } from "react-redux";
-import { changeResult } from "./weatherApiSlice.js";
+
 import { fitchWeather } from "./weatherApiSlice.js";
 
 const theme = createTheme({
@@ -43,13 +43,9 @@ function App() {
 })
 
   useEffect(() => {
-
-    // trying redux
-    console.log("dispatching weather")
-    dispatch(fitchWeather())
-    setDateAndTime(moment().format("MMM Do YY"));  
-    
-  }, []);
+  dispatch(fitchWeather());
+  setDateAndTime(moment().format("MMM Do YY"));
+}, [dispatch]);
   return (
     <div className="App">
       <ThemeProvider theme={theme}>

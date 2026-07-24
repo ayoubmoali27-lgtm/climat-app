@@ -5,14 +5,14 @@
 
 import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
+
 import CardContent from "@mui/material/CardContent";
-import Button from "@mui/material/Button";
+
 import Typography from "@mui/material/Typography";
 import CloudIcon from "@mui/icons-material/Cloud";
 import CircularProgress from '@mui/material/CircularProgress';
 
-import { useSelector, useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
 
 
 
@@ -97,7 +97,7 @@ export default function BasicButtons({  date,loadingHH }) {
 
                   
 
-                  <img src={weather.icon}/>
+                  <img src={weather.icon} alt="Weather icon" />
                 </Box>
 
                 <Box
